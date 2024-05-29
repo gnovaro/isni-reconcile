@@ -2,7 +2,7 @@
 An OpenRefine reconciliation service for the ISNI API.
 
 See API documentation:
-http://isni.oclc.nl/sru/DB=1.2/
+https://isni.oclc.org/sru/DB=1.2/
 
 This code is adapted from Michael Stephens:
 https://github.com/mikejs/reconcile-demo
@@ -23,7 +23,7 @@ import requests
 app = Flask(__name__)
 
 #some config
-api_base_url = 'http://isni.oclc.nl/sru/?operation=searchRetrieve&recordSchema=isni-b&query='
+api_base_url = 'https://isni.oclc.org/sru/?operation=searchRetrieve&recordSchema=isni-b&query='
 
 #See if Python 3 for unicode/str use decisions
 PY3 = version_info > (3,)
